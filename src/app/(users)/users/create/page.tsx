@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import { handleAddUser } from '@/app/prisma-db'
 import { redirect } from 'next/navigation'
 import React from 'react'
