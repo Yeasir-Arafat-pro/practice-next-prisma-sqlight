@@ -1,5 +1,3 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # dependencies
 /node_modules
 /.pnp
@@ -13,9 +11,11 @@
 # testing
 /coverage
 
-# next.js
+# next.js build outputs
 /.next/
 /out/
+/dist
+/.vercel
 
 # production
 /build
@@ -24,17 +24,30 @@
 .DS_Store
 *.pem
 
-# debug
+# debug logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# environment variables
+# (for practice project তুমি চাইলে .env.local commit করতে পারো, 
+# কিন্তু সাধারণত .env ফাইল push করা উচিত নয়)
+.env
+.env.local
+.env.development
+.env.production
+.env.test
 
-# vercel
-.vercel
+# prisma
+# auto-generated Prisma client
+/src/generated/prisma
+/prisma/migrations
+
+# SQLite database
+# ⚠️ যদি তুমি practice এর সময় data রাখতে চাও, dev.db commit করতে পারো 
+# (তাহলে .db নিচের ignore থেকে মুছে দাও)
+*.db
 
 # typescript
 *.tsbuildinfo
