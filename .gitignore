@@ -42,12 +42,11 @@ yarn-error.log*
 # prisma
 # auto-generated Prisma client
 /src/generated/prisma
-/prisma/migrations
 
 # SQLite database
 # ⚠️ যদি তুমি practice এর সময় data রাখতে চাও, dev.db commit করতে পারো 
 # (তাহলে .db নিচের ignore থেকে মুছে দাও)
-*.db
+
 
 # typescript
 *.tsbuildinfo
